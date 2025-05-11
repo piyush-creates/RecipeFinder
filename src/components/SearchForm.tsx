@@ -18,15 +18,18 @@ export default function SearchForm() {
     }
 
     return (
-        <form onSubmit={handleSearch}>
+        <form 
+            onSubmit={handleSearch}
+            className="flex items-center justify-center gap-2 mt-4"
+        >
             <input 
                 type="text"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="Search for a Recipe"
-                className="bg-red-500"
+                className="border-2 border-gray-300 rounded-md pl-2 pr-8 py-1"
             />
-            <button type="submit" className="bg-green-500">
+            <button type="submit" className="bg-green-500 text-white px-4 py-1 rounded-md">
                 Search
             </button>
         </form>

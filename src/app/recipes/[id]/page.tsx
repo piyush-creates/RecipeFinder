@@ -1,4 +1,3 @@
-// src/app/recipes/[id]/page.tsx
 
 interface RecipePageProps {
   params: Promise<{ id: string }>;
